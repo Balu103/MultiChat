@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="goToChat">
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="s"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/oval_button"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name Secondname"
+        android:id="@+id/userName"
+        android:layout_alignTop="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="my last message"
+        android:id="@+id/lastMsg"
+        android:layout_below="@id/userName"
+        android:layout_alignLeft="@id/userName"
+        android:layout_alignStart="@id/userName"
+        android:layout_marginTop="2dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="10:52"
+        android:id="@+id/lastMsgDate"
+        android:layout_below="@id/lastMsg"
+        android:layout_alignLeft="@id/lastMsg"
+        android:layout_alignStart="@id/lastMsg"
+        android:layout_marginTop="2dp" />
+</RelativeLayout>
